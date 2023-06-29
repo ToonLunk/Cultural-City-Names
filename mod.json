@@ -1,0 +1,8 @@
+{
+    "name": "Cultural City Names",
+    "author": "toonlunk",
+    "version": "0.1.0",
+    "description": "This configurable mod adds noun adjuncts (prefixes or suffixes) to city names based on the culture of the kingdom who made it!",
+    "targetGameBuild": 549,
+    "iconPath": "icon.png"
+  }
