@@ -13,7 +13,7 @@
           "NCMS_memload": "1.8.4.0",
           "Newtonsoft.Json": "13.0.0.0",
           "UnityEngine.CoreModule": "0.0.0.0",
-          "UnityEngine": "0.0.0.0"
+          "UnityEngine.InputLegacyModule": "0.0.0.0"
         },
         "runtime": {
           "Code.dll": {}
@@ -59,9 +59,9 @@
           }
         }
       },
-      "UnityEngine/0.0.0.0": {
+      "UnityEngine.InputLegacyModule/0.0.0.0": {
         "runtime": {
-          "UnityEngine.dll": {
+          "UnityEngine.InputLegacyModule.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           }
@@ -72,6 +72,14 @@
           "UnityEngine.TextRenderingModule.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.UI/1.0.0.0": {
+        "runtime": {
+          "UnityEngine.UI.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -91,11 +99,19 @@
           }
         }
       },
-      "UnityEngine.InputLegacyModule/0.0.0.0": {
+      "Assembly-CSharp-firstpass/0.0.0.0": {
         "runtime": {
-          "UnityEngine.InputLegacyModule.dll": {
+          "Assembly-CSharp-firstpass.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "DOTween/1.0.0.0": {
+        "runtime": {
+          "DOTween.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -107,11 +123,115 @@
           }
         }
       },
+      "FMODUnity/0.0.0.0": {
+        "runtime": {
+          "FMODUnity.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Unity.Mathematics/1.0.0.0": {
+        "runtime": {
+          "Unity.Mathematics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "UnityEngine.AudioModule/0.0.0.0": {
         "runtime": {
           "UnityEngine.AudioModule.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Firebase.Analytics/0.0.0.0": {
+        "runtime": {
+          "Firebase.Analytics.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Purchasing/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Purchasing.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Purchasing.Stores/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Purchasing.Stores.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Purchasing.SecurityStub/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Purchasing.SecurityStub.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "GoogleMobileAds/7.4.0.0": {
+        "runtime": {
+          "GoogleMobileAds.dll": {
+            "assemblyVersion": "7.4.0.0",
+            "fileVersion": "7.4.0.0"
+          }
+        }
+      },
+      "Firebase.App/1.0.0.0": {
+        "runtime": {
+          "Firebase.App.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GoogleMobileAds.Core/7.4.0.0": {
+        "runtime": {
+          "GoogleMobileAds.Core.dll": {
+            "assemblyVersion": "7.4.0.0",
+            "fileVersion": "7.4.0.0"
+          }
+        }
+      },
+      "AWSSDK.S3/3.3.0.0": {
+        "runtime": {
+          "AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.110.46"
+          }
+        }
+      },
+      "AWSSDK.Core/3.3.0.0": {
+        "runtime": {
+          "AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.105.9"
+          }
+        }
+      },
+      "Ionic.Zlib.CF/1.9.1.8": {
+        "runtime": {
+          "Ionic.Zlib.CF.dll": {
+            "assemblyVersion": "1.9.1.8",
+            "fileVersion": "1.9.1.8"
+          }
+        }
+      },
+      "Facepunch.Steamworks.Win64/1.0.0.0": {
+        "runtime": {
+          "Facepunch.Steamworks.Win64.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -128,6 +248,14 @@
           "UnityEngine.UnityWebRequestModule.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "C5/3.0.0.0": {
+        "runtime": {
+          "C5.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
           }
         }
       },
@@ -155,9 +283,33 @@
           }
         }
       },
+      "Firebase.TaskExtension/0.0.0.0": {
+        "runtime": {
+          "Firebase.TaskExtension.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Purchasing.Common/0.0.0.0": {
+        "runtime": {
+          "Purchasing.Common.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "UnityEngine.ScreenCaptureModule/0.0.0.0": {
         "runtime": {
           "UnityEngine.ScreenCaptureModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "TNRD.Humanizr/0.0.0.0": {
+        "runtime": {
+          "TNRD.Humanizr.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           }
@@ -176,6 +328,198 @@
           "UnityEngine.SpriteMaskModule.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.SharedInternalsModule/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.SharedInternalsModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.PhysicsModule/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.PhysicsModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Physics2DModule/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Physics2DModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.IMGUIModule/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.IMGUIModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.SpriteShapeModule/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.SpriteShapeModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UDP/0.0.9.0": {
+        "runtime": {
+          "UDP.dll": {
+            "assemblyVersion": "0.0.9.0",
+            "fileVersion": "0.0.9.0"
+          }
+        }
+      },
+      "AppStoreSettings/0.0.0.0": {
+        "runtime": {
+          "AppStoreSettings.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.GridModule/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.GridModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Unity.Timeline/1.0.0.0": {
+        "runtime": {
+          "Unity.Timeline.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.DirectorModule/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.DirectorModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Unity.Services.Analytics/0.0.0.0": {
+        "runtime": {
+          "Unity.Services.Analytics.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Unity.Services.Core/0.0.0.0": {
+        "runtime": {
+          "Unity.Services.Core.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Unity.Services.Core.Internal/0.0.0.0": {
+        "runtime": {
+          "Unity.Services.Core.Internal.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.UnityAnalyticsModule/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.UnityAnalyticsModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.AndroidJNIModule/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.AndroidJNIModule.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Purchasing.AppleCore/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Purchasing.AppleCore.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Purchasing.SecurityCore/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Purchasing.SecurityCore.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Purchasing.WinRTCore/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Purchasing.WinRTCore.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Purchasing.AppleStub/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Purchasing.AppleStub.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Purchasing.AppleMacosStub/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Purchasing.AppleMacosStub.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnityEngine.Purchasing.WinRTStub/0.0.0.0": {
+        "runtime": {
+          "UnityEngine.Purchasing.WinRTStub.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "GoogleMobileAds.Common/7.4.0.0": {
+        "runtime": {
+          "GoogleMobileAds.Common.dll": {
+            "assemblyVersion": "7.4.0.0",
+            "fileVersion": "7.4.0.0"
+          }
+        }
+      },
+      "Firebase.Platform/1.0.0.0": {
+        "runtime": {
+          "Firebase.Platform.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -211,14 +555,6 @@
           }
         }
       },
-      "UnityEngine.AndroidJNIModule/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.AndroidJNIModule.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
       "UnityEngine.AccessibilityModule/0.0.0.0": {
         "runtime": {
           "UnityEngine.AccessibilityModule.dll": {
@@ -243,14 +579,6 @@
           }
         }
       },
-      "UnityEngine.UnityAnalyticsModule/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.UnityAnalyticsModule.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
       "UnityEngine.UnityAnalyticsCommonModule/0.0.0.0": {
         "runtime": {
           "UnityEngine.UnityAnalyticsCommonModule.dll": {
@@ -267,33 +595,9 @@
           }
         }
       },
-      "UnityEngine.Physics2DModule/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.Physics2DModule.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "UnityEngine.PhysicsModule/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.PhysicsModule.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
       "UnityEngine.AssetBundleModule/0.0.0.0": {
         "runtime": {
           "UnityEngine.AssetBundleModule.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "UnityEngine.SharedInternalsModule/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.SharedInternalsModule.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           }
@@ -331,14 +635,6 @@
           }
         }
       },
-      "UnityEngine.IMGUIModule/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.IMGUIModule.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
       "UnityEngine.VFXModule/0.0.0.0": {
         "runtime": {
           "UnityEngine.VFXModule.dll": {
@@ -358,14 +654,6 @@
       "UnityEngine.VRModule/0.0.0.0": {
         "runtime": {
           "UnityEngine.VRModule.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "UnityEngine.GridModule/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.GridModule.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           }
@@ -419,14 +707,6 @@
           }
         }
       },
-      "UnityEngine.DirectorModule/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.DirectorModule.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
       "UnityEngine.VirtualTexturingModule/0.0.0.0": {
         "runtime": {
           "UnityEngine.VirtualTexturingModule.dll": {
@@ -462,14 +742,6 @@
       "UnityEngine.TextCoreModule/0.0.0.0": {
         "runtime": {
           "UnityEngine.TextCoreModule.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "UnityEngine.SpriteShapeModule/0.0.0.0": {
-        "runtime": {
-          "UnityEngine.SpriteShapeModule.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           }
@@ -556,12 +828,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UnityEngine/0.0.0.0": {
+    "UnityEngine.InputLegacyModule/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
     "UnityEngine.TextRenderingModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.UI/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -576,7 +853,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UnityEngine.InputLegacyModule/0.0.0.0": {
+    "Assembly-CSharp-firstpass/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DOTween/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -586,7 +868,72 @@
       "serviceable": false,
       "sha512": ""
     },
+    "FMODUnity/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.Mathematics/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "UnityEngine.AudioModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Firebase.Analytics/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Purchasing/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Purchasing.Stores/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Purchasing.SecurityStub/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GoogleMobileAds/7.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Firebase.App/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GoogleMobileAds.Core/7.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AWSSDK.S3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AWSSDK.Core/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ionic.Zlib.CF/1.9.1.8": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Facepunch.Steamworks.Win64/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -597,6 +944,11 @@
       "sha512": ""
     },
     "UnityEngine.UnityWebRequestModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "C5/3.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -616,7 +968,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Firebase.TaskExtension/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Purchasing.Common/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "UnityEngine.ScreenCaptureModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TNRD.Humanizr/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -627,6 +994,126 @@
       "sha512": ""
     },
     "UnityEngine.SpriteMaskModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.SharedInternalsModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.PhysicsModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Physics2DModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.IMGUIModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.SpriteShapeModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UDP/0.0.9.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AppStoreSettings/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.GridModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.Timeline/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.DirectorModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.Services.Analytics/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.Services.Core/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Unity.Services.Core.Internal/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.UnityAnalyticsModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.AndroidJNIModule/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Purchasing.AppleCore/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Purchasing.SecurityCore/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Purchasing.WinRTCore/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Purchasing.AppleStub/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Purchasing.AppleMacosStub/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnityEngine.Purchasing.WinRTStub/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GoogleMobileAds.Common/7.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Firebase.Platform/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -651,11 +1138,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UnityEngine.AndroidJNIModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "UnityEngine.AccessibilityModule/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
@@ -671,11 +1153,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UnityEngine.UnityAnalyticsModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "UnityEngine.UnityAnalyticsCommonModule/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
@@ -686,22 +1163,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UnityEngine.Physics2DModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "UnityEngine.PhysicsModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "UnityEngine.AssetBundleModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "UnityEngine.SharedInternalsModule/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -726,11 +1188,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UnityEngine.IMGUIModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "UnityEngine.VFXModule/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
@@ -742,11 +1199,6 @@
       "sha512": ""
     },
     "UnityEngine.VRModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "UnityEngine.GridModule/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -781,11 +1233,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UnityEngine.DirectorModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "UnityEngine.VirtualTexturingModule/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
@@ -807,11 +1254,6 @@
       "sha512": ""
     },
     "UnityEngine.TextCoreModule/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "UnityEngine.SpriteShapeModule/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
