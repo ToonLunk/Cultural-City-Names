@@ -50,7 +50,7 @@ namespace CulturalCityNames
             }
 
             // Check if names.json file exists in .modconfig folder
-            string modConfigPath = Path.Combine(Application.dataPath, "../.modconfig");
+            string modConfigPath = Path.Combine(Application.dataPath, "/.modconfig");
             string filePath = Path.Combine(modConfigPath, "names.json");
             List<CityTitle> cityTitles;
 
