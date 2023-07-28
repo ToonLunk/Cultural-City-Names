@@ -17,10 +17,9 @@ using ai.behaviours;
 
 namespace CulturalCityNames
 {
-
     public class CityTitle
     {
-        public string ending { get; set;}
+        public string ending { get; set; }
         public string type { get; set; }
         public string extension { get; set; }
     }
@@ -32,17 +31,16 @@ namespace CulturalCityNames
         {
             string infoMessage = "<INFO>Cultural City Names: ";
 
-            // don't have to use try block here because a new city always has a kingdom
             var kingdom = (Kingdom)Reflection.GetField(__instance.GetType(), __instance, "kingdom");
             string kingdomName = kingdom.name.ToString();
 
-            // have to declare outside then use a try block because sometimes a city is created without a culture (such as in a new world)
             string cultureName;
-            try 
+            try
             {
                 Culture culture = kingdom.getCulture();
                 cultureName = culture.data.name.ToString();
-            } catch
+            }
+            catch
             {
                 Debug.Log(infoMessage + "No culture found for new city; must be a capital?");
                 cultureName = "NONE";
@@ -60,29 +58,36 @@ namespace CulturalCityNames
                 raceTemplateName = "NONE";
             }
 
-            //Debug.Log(string.Concat(new string[]
-            //{
-            //    infoMessage,
-            //    "New village created in kingdom ",
-            //    kingdomName,
-            //    " with culture ",
-            //    cultureName
-            //}));
+            string jsonPath = "./names.json"; // Assuming the JSON file is in the same directory as the mod's DLL.
+            string json;
 
-            string json = File.ReadAllText("./Mods/Cultural City Names/names.json");
+            try
+            {
+                using (System.IO.StreamReader reader = new System.IO.StreamReader(jsonPath))
+                {
+                    json = reader.ReadToEnd();
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Error reading names.json: " + e.Message);
+                return false; // Return false to prevent mod from changing city name if JSON cannot be read.
+            }
+
             var cityTitles = JsonConvert.DeserializeObject<List<CityTitle>>(json);
 
             string suffix = "";
             string prefix = "";
 
-            foreach(var cityTitle in cityTitles)
+            foreach (var cityTitle in cityTitles)
             {
                 if (cultureName.EndsWith(cityTitle.ending))
                 {
                     if (cityTitle.type == "prefix")
                     {
                         prefix = cityTitle.extension;
-                    } else
+                    }
+                    else
                     {
                         suffix = cityTitle.extension;
                     }
