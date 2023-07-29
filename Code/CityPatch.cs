@@ -52,7 +52,7 @@ namespace CulturalCityNames
             // Check if names.json file exists in .modconfig folder
             string modConfigPath = Path.Combine(Application.dataPath, "../mods/.modconfig");
             string filePath = Path.Combine(modConfigPath, "names.json");
-            List<CityTitle> cityTitles;
+            List<CityTitle> cityTitles = new List<CityTitle>(); // Initialize the list to an empty list
 
             if (File.Exists(filePath))
             {
@@ -71,7 +71,6 @@ namespace CulturalCityNames
             else
             {
                 Debug.LogError("For some reason, names.json wasn't created.");
-
             }
 
             // Apply city name modifications using the data from names.json
