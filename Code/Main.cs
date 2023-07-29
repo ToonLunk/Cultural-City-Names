@@ -68,7 +68,12 @@ namespace CulturalCityNames
                     new CityTitle { ending = "esk", type = "prefix", extension = "Township of " },
                     new CityTitle { ending = "ink", type = "prefix", extension = "Village of " },
                     new CityTitle { ending = "bia", type = "prefix", extension = "Fiefdom of " },
-                    new CityTitle { ending = "ask", type = "suffix", extension = " Place" }
+                    new CityTitle { ending = "ask", type = "suffix", extension = " Place" },
+                    new CityTitle { ending = "mer", type = "suffix", extension = " Hamlet" },
+                    new CityTitle { ending = "mar", type = "suffix", extension = " March" },
+                    new CityTitle { ending = "hia", type = "suffix", extension = " Union" },
+                    new CityTitle { ending = "eep", type = "suffix", extension = " Stronghold" },
+                    new CityTitle { ending = "ria", type = "suffix", extension = " Metropolis" }
                 };
 
                 // Convert the list to JSON
