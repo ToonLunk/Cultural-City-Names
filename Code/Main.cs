@@ -26,7 +26,7 @@ namespace CulturalCityNames
             harmony.PatchAll();
 
             // Check if names.json file exists in .modconfig folder
-            string modConfigPath = Path.Combine(Application.dataPath, "../mods/.modconfig");
+            string modConfigPath = Path.Combine(Application.dataPath, "../modConfigs");
             string filePath = Path.Combine(modConfigPath, "names.json");
             List<CityTitle> cityTitles;
 
