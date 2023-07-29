@@ -71,7 +71,6 @@ namespace CulturalCityNames
                     new CityTitle { ending = "bia", type = "prefix", extension = "Fiefdom of " },
                     new CityTitle { ending = "ask", type = "suffix", extension = " Place" }
                 };
-            };
 
                 // Convert the list to JSON
                 string json = JsonConvert.SerializeObject(cityTitles, Formatting.Indented);
