@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using NCMS;
 using HarmonyLib;
 using UnityEngine;
+using Newtonsoft.Json;
 
 
 namespace CulturalCityNames
