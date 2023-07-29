@@ -4,12 +4,6 @@ using System.IO;
 using HarmonyLib;
 using Newtonsoft.Json;
 using ReflectionUtility;
-using System.IO.Pipes;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using NCMS;
 using UnityEngine;
 
 namespace CulturalCityNames
@@ -26,6 +20,35 @@ namespace CulturalCityNames
     {
         static bool Prefix(City __instance)
         {
+            string infoMessage = "<INFO>Cultural City Names: ";
+
+            var kingdom = (Kingdom)Reflection.GetField(__instance.GetType(), __instance, "kingdom");
+            string kingdomName = kingdom.name.ToString();
+
+            string cultureName;
+            try
+            {
+                Culture culture = kingdom.getCulture();
+                cultureName = culture.data.name.ToString();
+            }
+            catch
+            {
+                Debug.Log(infoMessage + "No culture found for new city; must be a capital?");
+                cultureName = "NONE";
+            }
+
+            string raceTemplateName;
+            try
+            {
+                Race race = (Race)Reflection.GetField(__instance.GetType(), __instance, "race");
+                raceTemplateName = race.name_template_city.ToString();
+            }
+            catch
+            {
+                Debug.Log(infoMessage + "No race found for new city!");
+                raceTemplateName = "NONE";
+            }
+
             // Check if names.json file exists in .modconfig folder
             string modConfigPath = Path.Combine(Application.dataPath, "../mods/.modconfig");
             string filePath = Path.Combine(modConfigPath, "names.json");
@@ -47,8 +70,8 @@ namespace CulturalCityNames
             }
             else
             {
-                Debug.LogError("names.json file not found. Make sure it exists in .modconfig folder.");
-                return false; // Return false to prevent mod from changing city name if names.json is missing.
+                Debug.LogError("For some reason, names.json wasn't created.");
+
             }
 
             // Apply city name modifications using the data from names.json
