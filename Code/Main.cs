@@ -48,8 +48,6 @@ namespace CulturalCityNames
                 // If the file doesn't exist, create a new list of CityTitle objects (same as the original JSON)
                 cityTitles = new List<CityTitle>
                 {
-                    cityTitles = new List<CityTitle>
-                {
                     new CityTitle { ending = "ian", type = "prefix", extension = "City of " },
                     new CityTitle { ending = "dia", type = "prefix", extension = "Ankh-" },
                     new CityTitle { ending = "hin", type = "suffix", extension = " Prefecture" },
@@ -89,3 +87,4 @@ namespace CulturalCityNames
             }
         }
     }
+}
