@@ -4,6 +4,12 @@ using System.IO;
 using HarmonyLib;
 using Newtonsoft.Json;
 using ReflectionUtility;
+using System.IO.Pipes;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using NCMS;
 using UnityEngine;
 
 namespace CulturalCityNames
