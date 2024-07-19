@@ -6,22 +6,50 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using NCMS;
 using HarmonyLib;
 using UnityEngine;
 using Newtonsoft.Json;
+using NeoModLoader;
+using NeoModLoader.api;
+using NeoModLoader.services;
+using NCMS.Utils;
+
 
 
 namespace CulturalCityNames
 {
-    [ModEntry]
-    class Main : MonoBehaviour
+    public class ModClass : MonoBehaviour, IMod
+
     {
         const string ModName = "Cultural City Mod";
+        private ModDeclare _declare;
+        private GameObject _gameObject;
+
+        public ModDeclare GetDeclaration()
+        {
+            return _declare;
+        }
+        public GameObject GetGameObject()
+        {
+            return _gameObject;
+        }
+
+        public string GetUrl()
+        {
+            return "https://gamebanana.com/mods/449696";
+        }
+
+        public void OnLoad(ModDeclare pModDecl, GameObject pGameObject)
+        {
+            _declare = pModDecl;
+            _gameObject = pGameObject;
+            // Initialize your mod.
+            // Methods are called in the order: OnLoad -> Awake -> OnEnable -> Start -> Update
+            LogService.LogInfo($"[{pModDecl.Name}]: Hello World!");
+        }
 
         void Awake()
         {
-            Debug.Log($"Hello world from {ModName} by Toon Lunk!");
             Harmony harmony = new Harmony(ModName);
             harmony.PatchAll();
 

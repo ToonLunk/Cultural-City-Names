@@ -77,6 +77,8 @@ namespace CulturalCityNames
             string suffix = "";
             string prefix = "";
 
+            bool endingFound = false;
+
             foreach (var cityTitle in cityTitles)
             {
                 if (cultureName.EndsWith(cityTitle.ending))
@@ -89,11 +91,76 @@ namespace CulturalCityNames
                     {
                         suffix = cityTitle.extension;
                     }
+                    endingFound = true;
+                    break;
+                }
+            }
+
+            if (!endingFound)
+            {
+                var newCityTitle = GenerateUniqueCityTitle(cultureName, cityTitles);
+                cityTitles.Add(newCityTitle);
+                SaveConfig(modConfigPath, cityTitles);
+                if (newCityTitle.type == "prefix")
+                {
+                    prefix = newCityTitle.extension;
+                }
+                else
+                {
+                    suffix = newCityTitle.extension;
                 }
             }
 
             __instance.data.name = prefix + NameGenerator.getName(raceTemplateName, ActorGender.Male) + suffix;
             return false;
+        }
+
+        private static CityTitle GenerateUniqueCityTitle(string cultureName, List<CityTitle> existingCityTitles)
+        {
+            var random = new System.Random();
+            string newEnding = cultureName.Substring(cultureName.Length - 3); // Use last 3 characters as new ending
+
+            // Meaningful default prefixes and suffixes not already in use
+            List<string> defaultPrefixes = new List<string> {"Fort ", "Settlement of ", "Commonwealth of ", "Gin'",};
+            List<string> defaultSuffixes = new List<string> {" Settlement", " Outpost", " Town", " Commune", "'s Reach", " Fork"};
+
+            // Remove existing prefixes and suffixes from defaults
+            foreach (var cityTitle in existingCityTitles)
+            {
+                if (cityTitle.type == "prefix")
+                {
+                    defaultPrefixes.Remove(cityTitle.extension);
+                }
+                else if (cityTitle.type == "suffix")
+                {
+                    defaultSuffixes.Remove(cityTitle.extension);
+                }
+            }
+
+            // Randomly choose new type and corresponding extension
+            string newType = random.Next(2) == 0 ? "prefix" : "suffix";
+            string newExtension = newType == "prefix" ? defaultPrefixes[random.Next(defaultPrefixes.Count)] : defaultSuffixes[random.Next(defaultSuffixes.Count)];
+
+            return new CityTitle
+            {
+                ending = newEnding,
+                type = newType,
+                extension = newExtension
+            };
+        }
+
+        private static void SaveConfig(string modConfigPath, List<CityTitle> cityTitles)
+        {
+            string filePath = Path.Combine(modConfigPath, "names.json");
+            string json = JsonConvert.SerializeObject(cityTitles, Formatting.Indented);
+            try
+            {
+                File.WriteAllText(filePath, json);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Error writing names.json: " + e.Message);
+            }
         }
     }
 }
